@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./scss/fontawesome.scss";
+@import "./scss/solid.scss";
+@import "./scss/brands.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.btn-custom {
+  background-color: #563d7c;
+  border-color: #563d7c;
+  &:hover {
+    background-color: #4b3175;
+    border-color: #4b3175;
+  }
+  &:focus,
+  &:active,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):active:focus {
+    background-color: #4b3175;
+    border-color: #4b3175;
+    box-shadow: 0 0 0 0.2rem rgba(140, 69, 206, 0.5);
+  }
+}

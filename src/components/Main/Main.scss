@@ -1,0 +1,73 @@
+.main {
+    height: 100vh;
+    .row {
+        height: 100%;
+    }
+    h1 {
+        font-weight: 900;
+    }
+}
+
+.aside {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    &__content {
+        padding: 20px 5%;
+        ul {
+            padding: 0;
+        }
+        ul li {
+            list-style: none;
+            position: relative;   
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            .fas {
+                color: #563d7c;
+                margin-right: 7px;
+            }       
+        }
+    }
+    &__text {
+        padding-top: 12px;
+        // max-width: 350px;
+    }
+}
+
+.background {
+    background-color: #cbd2d5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 85%;
+    background-image: url(../../images/belfort.jpg);
+}
+
+@media (max-width: 768px) { 
+    .aside {
+        order: 2;
+        &__content {
+            padding: 15px 0 45px;
+            text-align: center;
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        ul, ol {
+            text-align: left;            
+        }
+        ol {
+            padding-left: 20px;
+        }
+    }
+    .background {
+        order: 1;
+        padding-bottom: 100%;
+        background-size: 100% auto;
+    }
+    .main {
+        height: auto;
+    }
+ }
